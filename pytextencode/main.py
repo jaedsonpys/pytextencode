@@ -54,3 +54,13 @@ def encode(text: str) -> str:
         encoded_text += characters[l]
 
     return encoded_text
+
+
+def decode(text: str) -> str:
+    decoded_text = ''
+    char_list = get_encoded_chars(text)
+
+    for l in char_list:
+        decoded_text += get_key_by_value(l)
+
+    return decoded_text
