@@ -34,6 +34,19 @@ def get_key_by_value(value: str) -> str:
             return k
 
 
+def get_encoded_chars(text: str) -> list:
+    encoded_chars = []
+    next = 2
+    last = 0
+
+    for __ in range(int(len(text)/ 2)):
+        encoded_chars.append(text[last:next])
+        last = next
+        next += 2
+
+    return encoded_chars
+
+
 def encode(text: str) -> str:
     encoded_text = ''
 
