@@ -2,7 +2,7 @@ import string
 from random import choice
 
 characters = string.ascii_letters + string.digits
-full_characters = string.ascii_letters + string.digits + string.punctuation + string.whitespace
+full_characters = string.printable
 
 def gen():
     dict_char = {}
