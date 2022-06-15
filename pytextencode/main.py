@@ -26,3 +26,12 @@ characters = {
     '\n': '4k', '\r': 'Jn', '\x0b': '42',
     '\x0c': 'Cy'
 }
+
+
+def encode(text: str) -> str:
+    encoded_text = ''
+
+    for l in text:
+        encoded_text += characters[l]
+
+    return encoded_text
