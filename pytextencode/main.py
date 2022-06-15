@@ -28,6 +28,12 @@ characters = {
 }
 
 
+def get_key_by_value(value: str) -> str:
+    for k, v in characters.items():
+        if v == value:
+            return k
+
+
 def encode(text: str) -> str:
     encoded_text = ''
 
